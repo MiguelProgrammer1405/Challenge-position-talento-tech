@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.top-part-nav {
+  width: 100%;
+  height: 38px;
+  background: #1cd1b0;
+}
+
+.bottom-part-nav {
+  width: 100%;
+  height: 101px;
+  background: #00669f;
+  display: grid;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+/* section styles */
+
+.section {
+  padding: 7rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.single-card {
+  background: #e6dddd;
+  max-width: 350px;
+  margin: 0 auto 4rem;
+  border-radius: 5%;
+  text-align: center;
+  padding-bottom: 3rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.6s ease-in-out;
+}
+
+.single-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.bg-img-container {
+  width: 100%;
+  height: 194px;
+  position: relative;
+}
+
+.profile-img-container {
+  border-top-right-radius: 10%;
+  margin: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  overflow: hidden;
+}
+
+.img-background {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.heart-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+  color: #cc2424;
+  font-size: 2rem;
+}
+
+.title {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  text-align: left;
+  line-height: 1.5;
+  width: 90%;
+  margin: 1rem auto 2rem;
+}
+
+.btn {
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border-radius: 5%;
+  border: transparent;
+  background-color: #00669f;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer h4 {
+  padding: 2rem 2rem;
+  background: #00669f;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
